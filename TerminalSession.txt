@@ -1,1 +1,58 @@
-
+ pwd
+/home/runner/command-line-basics-assignment-CarlosEOL
+ ls
+README.md  TerminalSession.txt
+ mkdir LinuxExercise
+ ls
+LinuxExercise  README.md  TerminalSession.txt
+ cd LinuxExercise
+ ls
+ touch myfile.txt
+ echo this is my new file>>myfile.txt
+ ls
+myfile.txt
+ cat myfile.txt
+this is my new file
+ cp myfile.txt myfile_copy.txt
+ ls
+myfile_copy.txt  myfile.txt
+ mv myfile_copy.txt myfile2.txt
+ mv myfile2.txt ~
+ cd ~
+ ls
+command-line-basics-assignment-CarlosEOL  myfile2.txt
+jdt.ls-java-project           _test_runner.py
+ cd LinuxExercise
+bash: cd: LinuxExercise: No such file or directory
+ ls
+command-line-basics-assignment-CarlosEOL  myfile2.txt
+jdt.ls-java-project           _test_runner.py
+ mv myfile2.txt command-line-basics-assignment-CarlosEOL/
+ cd ls
+bash: cd: ls: No such file or directory
+ ls
+command-line-basics-assignment-CarlosEOL  jdt.ls-java-project  _test_runner.py
+ cd command-line-basics-assignment-CarlosEOL/
+ ls
+LinuxExercise  myfile2.txt  README.md  TerminalSession.txt
+ cd LinuxExercise
+ rm myfile.txt
+ rmdir LinuxExercise
+rmdir: failed to remove 'LinuxExercise': No such file or directory
+ cd ~
+ cd command-line-basics-assignment-CarlosEOL/
+ pwd
+/home/runner/command-line-basics-assignment-CarlosEOL
+ cd >>
+bash: syntax error near unexpected token `newline'
+ cd ..
+ pwd
+/home/runner
+ cd command-line-basics-assignment-CarlosEOL/
+ pwd
+/home/runner/command-line-basics-assignment-CarlosEOL
+ ls
+LinuxExercise  myfile2.txt  README.md  TerminalSession.txt
+ rmdir LinuxExercise/
+ ls
+myfile2.txt  README.md  TerminalSession.txt
